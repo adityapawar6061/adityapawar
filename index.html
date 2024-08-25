@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Pawar - Blockchain Developer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: bold;
+        }
+
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1500x500') no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            animation: slideInDown 2s ease-in-out;
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            animation: slideInUp 2s ease-in-out;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 5px;
+            background-color: #007bff;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        .skills, .projects, .education {
+            padding: 60px 0;
+        }
+
+        .skills ul, .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul li, .projects ul li {
+            font-size: 1.25rem;
+            padding: 10px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .contact-icons a {
+            color: #343a40;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .contact-icons a:hover {
+            color: #007bff;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Aditya Pawar</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="display-4">Blockchain Developer</h1>
+            <p class="lead">Crafting decentralized solutions with passion and precision.</p>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="skills text-center">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Blockchain Development: Ethereum, Hyperledger, Binance Smart Chain</li>
+                <li>Smart Contracts: Solidity, Vyper</li>
+                <li>Decentralized Applications (DApps): Web3.js, Truffle, Hardhat</li>
+                <li>Programming Languages: JavaScript, Python, C++</li>
+                <li>Cryptography: Encryption, Digital Signatures, Hash Functions</li>
+                <li>Database Management: IPFS, MySQL, MongoDB</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects text-center bg-light">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li><strong>Crypto Wallet DApp:</strong> Developed a secure and user-friendly cryptocurrency wallet application.</li>
+                <li><strong>Decentralized Voting System:</strong> Created a transparent and tamper-proof voting platform.</li>
+                <li><strong>Supply Chain Management:</strong> Implemented a blockchain-based supply chain management system.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education text-center">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p>Bachelor of Technology (B.Tech) in Computer Science<br>ABC University, 2020<br>Focus: Blockchain Technology, Cryptography, Distributed Systems</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact text-center bg-light">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-icons">
+                <a href="mailto:aditya.pawar@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/aditya-pawar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/adityapawar" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/aditya_pawar" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aditya Pawar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
